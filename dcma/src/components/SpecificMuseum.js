@@ -12,7 +12,7 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
     fetch(`${API}/${id}`)
       .then((res) => res.json())
       .then((data) => setSpecificMuseum(data));
-  }, [id]);
+  }, [id, API]);
 
   function handleClick() {
     fetch(`${API}/${id}`, {
@@ -32,6 +32,12 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
   } else {
     const { name, admission, desc, image, feedback } = specificMuseum;
 
+    const arrayOfRating = feedback.map((Obj) => Obj.rating);
+    const averageRating =
+      arrayOfRating.reduce((partSum, a) => partSum + a, 0) /
+      arrayOfRating.length;
+    console.log(averageRating);
+
     const ratingsArray = feedback.map((obj) => {
       return <CommentCard rating={obj.rating} comment={obj.comment} />;
     });
@@ -47,6 +53,12 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
             width="500px"
             height="400px"
           />
+          <h3>
+            Average Rating:{" "}
+            {isNaN(averageRating)
+              ? "No ratings yet- be the first!"
+              : averageRating}
+          </h3>
           <p style={admission === 0 ? admissionFreeStyle : admissionStyle}>
             {admission === 0 ? "Free Admission" : "Paid Admission"}
           </p>
@@ -56,7 +68,12 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
           <Link to="/museums" onClick={handleClick} style={linkStyle}>
             Delete
           </Link>
-          <CommentForm API={API} id={id} addComment={addComment} feedback={feedback} />
+          <CommentForm
+            API={API}
+            id={id}
+            addComment={addComment}
+            feedback={feedback}
+          />
           {ratingsArray}
         </div>
       </div>
@@ -118,9 +135,9 @@ const descriptionStyle = {
 };
 
 const descriptionTextStyle = {
-  color: "#333", 
+  color: "#333",
   fontSize: "25px",
-  fontFamily: "Arial, sans-serif", 
+  fontFamily: "Arial, sans-serif",
 };
 
 const linkStyle = {
