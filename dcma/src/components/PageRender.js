@@ -17,7 +17,6 @@ function PageRender(){
         .then(r=>r.json())
         .then(d=>setMuseums(d))
     },[])
-    useEffect(()=>{console.log(museums)},[museums])
     return(
         <div>
             <BrowserRouter>
