@@ -11,32 +11,32 @@ We will be creating our own db.json that will look similar to below:
 
 ## MVP
 User will be able to:
-* C: Add a new museuem to the site 
-* R: Read information on each musuem, including other users comments and ratings
-* U: Users can comment and rate musuems they have vistited 
+* C: Add a new museum to the site 
+* R: Read information on each museum, including other users comments and ratings
+* U: Users can comment and rate museums they have vistited 
 * D: Users can remove museums that have shut down
  
 Client Side Routing & Purpose:
-* Landing page with recommended musuem of the day - path = "/"
-* Museum Lists - path = "/musuems"
-* Specific Museum - path = "/musuems/:id"
-* Adding Museum - path = "/musuems/new"
+* Landing page with recommended museum of the day - path = "/"
+* Museum Lists - path = "/museums"
+* Specific Museum - path = "/museums/:id"
+* Adding Museum - path = "/museums/new"
 
 Components:
 * App
   * PageRender
     * Navbar
     * Home
-    * MusuemList
-      * MusuemCard
-    * MusuemForm
-    * SpecificMusuem
+    * MuseumList
+      * MuseumCard
+    * MuseumForm
+    * SpecificMuseum
       * CommentForm
       * CommentCard
 
 
 ## Strech Goals
-1. Updating a Musuem instead of removing and adding a new one
+1. Updating a Museum instead of removing and adding a new one
 2. Admission Filters
 3. Search by keywords from description
 
