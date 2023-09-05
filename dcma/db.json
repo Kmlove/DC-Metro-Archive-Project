@@ -8,28 +8,7 @@
       "desc": "This medical history museum is not for the faint of heart! The gory history of medicine in the United States is on full display in this army-run museum, so make sure all kids (or people with delicate stomachs) are forewarned for the best possible time.",
       "admission": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walter_Reed_Army_Hospital%2C_Washington%2C_D.C.%2C_prior_to_its_closing_in_2011.jpg/440px-Walter_Reed_Army_Hospital%2C_Washington%2C_D.C.%2C_prior_to_its_closing_in_2011.jpg",
-      "feedback": [
-        {
-          "rating": 4,
-          "comment": "hi "
-        },
-        {
-          "rating": 1,
-          "comment": "hi how are you"
-        },
-        {
-          "rating": 4,
-          "comment": "test"
-        },
-        {
-          "rating": 3,
-          "comment": "test232"
-        },
-        {
-          "rating": 3,
-          "comment": "hi how "
-        }
-      ]
+      "feedback": []
     },
     {
       "id": 2,
