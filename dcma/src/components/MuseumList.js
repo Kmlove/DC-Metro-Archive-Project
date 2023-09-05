@@ -1,9 +1,9 @@
 
 
-function MusuemList(){
+function MuseumList(){
     return(
-        <><p>Example Text in MusuemList</p></>
+        <><p>Example Text in MuseumList</p></>
     )
 }
 
-export default MusuemList
+export default MuseumList

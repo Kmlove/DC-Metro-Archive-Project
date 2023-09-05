@@ -1,8 +1,12 @@
-
+import { NavLink } from "react-router-dom"
 
 function Navbar(){
     return(
-        <><p>Example Text in Navbar</p></>
+        <div>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/MuseumList">Museums</NavLink>
+            <NavLink to="/MuseumForm">Add Museum</NavLink>
+        </div>
     )
 }
 

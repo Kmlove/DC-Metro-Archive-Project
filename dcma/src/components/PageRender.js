@@ -8,13 +8,13 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 function PageRender(){
     return(
         <div>
-            <Navbar/>
             <BrowserRouter>
+                <Navbar/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/MuseumList" element={<MuseumList/>}/>
                     <Route path="/MuseumForm" element={<MuseumForm/>}/>
-                    <Route path="/MuseumList/:id" element={<SpecificMuseum Museum={{}}/>}/>
+                    <Route path="/MuseumList/:id" element={<SpecificMuseum museum={{}}/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
