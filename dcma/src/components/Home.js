@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Home({ randomMuseum }) {
-  console.log(randomMuseum);
   if (randomMuseum === undefined) {
     return <h1>Loading...</h1>;
   } else {
@@ -11,88 +10,111 @@ function Home({ randomMuseum }) {
       arrayOfRating.length;
 
     return (
-      <>
-        <h1>Welcome to DC Museum Archive</h1>
-        <h2> Recommended Spot of the Day</h2>
-        <div>
-          <h3>{randomMuseum.name}</h3>
-          <p>{randomMuseum.desc}</p>
-          <img src={randomMuseum.image} alt={randomMuseum.name} />
-          <p>
-            Average Rating:{" "}
-            {isNaN(averageRating) ? "No ratings yet!" : averageRating}
-          </p>
-          <Link to={`/museums/${randomMuseum.id}`}>Learn More!</Link>
+      <div style={containerStyle}>
+        <h1 style={titleStyle}>Welcome to DC Museum Archive</h1>
+        <div style={recommendedSpotContainerStyle}>
+          <h2 style={subtitleStyle}>Recommended Spot of the Day</h2>
+          <div style={cardStyle}>
+            <h3 style={museumNameStyle}>{randomMuseum.name}</h3>
+            <div style={imageContainerStyle}>
+              <img
+                style={imageStyle}
+                src={randomMuseum.image}
+                alt={randomMuseum.name}
+              />
+            </div>
+            <p style={descriptionStyle}>{randomMuseum.desc}</p>
+            <p style={ratingStyle}>
+              Average Rating:{" "}
+              {isNaN(averageRating) ? "No ratings yet!" : averageRating}
+            </p>
+            <Link to={`/museums/${randomMuseum.id}`} style={linkStyle}>
+              Learn More!
+            </Link>
+          </div>
         </div>
-      </>
+      </div>
     );
   }
 }
 
 const containerStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "100vh",
-  //backgroundImage: `url(${usCapitolBackground})`,
-  backgroundSize: "cover",
-  backgroundColor: "rgba(255, 255, 255, 0.6)",
-  backgroundBlendMode: "lighten",
-  backgroundPosition: "center",
-};
-
-const centeredContent = {
   textAlign: "center",
+  padding: "20px",
 };
 
-const headerStyle = {
-  fontSize: "28px",
+const titleStyle = {
+  fontSize: "48px", // Increase font size
   fontWeight: "bold",
   color: "#1E90FF",
-  fontFamily: "Arial, sans-serif",
+  marginBottom: "80px", // Add more distance below the title
+};
+
+const recommendedSpotContainerStyle = {
+  width: "50%",
+  margin: "0 auto",
+  backgroundColor: "#f0f0f0",
+  padding: "20px",
+  borderRadius: "10px",
+  boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+  marginBottom: "20px",
+};
+
+const subtitleStyle = {
+  fontSize: "24px",
+  color: "#333",
+};
+
+const cardStyle = {
+  backgroundColor: "#fff",
+  padding: "20px",
+  borderRadius: "10px",
+  boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+};
+
+const museumNameStyle = {
+  fontSize: "28px",
+  fontWeight: "bold",
+  marginBottom: "10px",
+};
+
+const imageContainerStyle = {
+  width: "100%",
+  height: "300px",
+  overflow: "hidden",
+  marginBottom: "10px",
 };
 
 const imageStyle = {
-  maxWidth: "100%",
-  width: "500px",
-  height: "400px",
-  borderRadius: "5px",
-  marginTop: "10px",
-};
-
-const admissionFreeStyle = {
-  color: "#28a745",
-  fontWeight: "bold",
-};
-
-const admissionStyle = {
-  color: "#dc3545",
-  fontWeight: "bold",
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  borderRadius: "10px",
 };
 
 const descriptionStyle = {
-  backgroundColor: "#f8f9fa",
-  padding: "20px",
-  marginTop: "20px",
-  borderRadius: "5px",
-  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-  fontFamily: "Arial, sans-serif",
   fontSize: "18px",
-  lineHeight: "1.5",
-  color: "#333",
+  lineHeight: "1.4",
+  color: "#555",
+  marginBottom: "10px",
 };
 
-const descriptionTextStyle = {
-  color: "#333",
-  fontSize: "25px",
-  fontFamily: "Arial, sans-serif",
+const ratingStyle = {
+  fontSize: "20px",
+  fontWeight: "bold",
+  color: "#28a745",
+  marginBottom: "10px",
 };
 
 const linkStyle = {
   textDecoration: "none",
   color: "#007bff",
   fontWeight: "bold",
-  marginLeft: "10px",
 };
 
 export default Home;
+
+
+
+
+
