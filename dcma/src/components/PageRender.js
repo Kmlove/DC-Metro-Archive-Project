@@ -9,11 +9,15 @@ const API = "http://127.0.0.1:3001/museums"
 
 function PageRender(){
     const [museums,setMuseums] = useState([])
+    function appendToMuseums(newMuseum){
+        setMuseums([...museums,newMuseum])
+    }
     useEffect(()=>{
         fetch(API)
         .then(r=>r.json())
         .then(d=>setMuseums(d))
     },[])
+    useEffect(()=>{console.log(museums)},[museums])
     return(
         <div>
             <BrowserRouter>
@@ -21,8 +25,8 @@ function PageRender(){
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/MuseumList" element={<MuseumList museums={museums}/>}/>
-                    <Route path="/MuseumForm" element={<MuseumForm/>}/>
-                    <Route path="/MuseumList/:id" element={<SpecificMuseum museum={{}}/>}/>
+                    <Route path="/MuseumForm" element={<MuseumForm appendToMuseums={appendToMuseums} API={API}/>}/>
+                    <Route path="/MuseumList/1" element={<SpecificMuseum museum={museums[0]}/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
