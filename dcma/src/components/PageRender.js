@@ -16,6 +16,17 @@ function PageRender(){
         const updatedMuseums = museums.filter(museum => museum.id !== deletedMuseum.id)
         setMuseums(updatedMuseums)
     }
+    function onUpdatedMuseum(updatedMuseum){
+        const updatedMuseums = museums.map(museum => {
+            if(updatedMuseum.id === museum.id){
+                return updatedMuseum
+            } else {
+                return museum
+            }
+        })
+        setMuseums(updatedMuseums)
+    }
+    console.log(museums)
     useEffect(()=>{
         fetch(API)
         .then(r=>r.json())
@@ -30,7 +41,7 @@ function PageRender(){
                     <Route path="/" element={<Home/>}/>
                     <Route path="/museums" element={<MuseumList museums={museums} onRemoveMuseum={onRemoveMuseum} API={API}/>}/>
                     <Route path="/museums/new" element={<MuseumForm appendToMuseums={appendToMuseums} API={API}/>}/>
-                    <Route path="/museums/:id" element={<SpecificMuseum API={API} onRemoveMuseum={onRemoveMuseum} />}/>
+                    <Route path="/museums/:id" element={<SpecificMuseum API={API} onUpdatedMuseum={onUpdatedMuseum} onRemoveMuseum={onRemoveMuseum} />}/>
                 </Routes>
             </BrowserRouter>
         </div>

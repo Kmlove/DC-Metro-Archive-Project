@@ -3,7 +3,7 @@ import CommentCard from "./CommentCard";
 import CommentForm from "./CommentForm";
 import { Link, useParams } from "react-router-dom";
 
-function SpecificMuseum({ API, onRemoveMuseum }) {
+function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
 
   const [specificMuseum, setSpecificMuseum] = useState(null);
   const { id } = useParams();
@@ -20,13 +20,18 @@ function SpecificMuseum({ API, onRemoveMuseum }) {
     })
     .then(res=> res.json())
     .then(data => onRemoveMuseum(specificMuseum))
-}
+  }
+
+  function addComment(updatedMuseum){
+    setSpecificMuseum(updatedMuseum)
+    onUpdatedMuseum(updatedMuseum)
+  }
   
   if (specificMuseum === null) {
     return <h1>LOADING...</h1>;
   } else {
-    const {name, admission, desc, hours, image, feeback} = specificMuseum
-    const ratingsArray = feeback.map(obj => {
+    const {name, admission, desc, hours, image, feedback} = specificMuseum
+    const ratingsArray = feedback.map(obj => {
       return <CommentCard rating={obj.rating} comment={obj.comment}/>
     })
     return (
@@ -40,7 +45,7 @@ function SpecificMuseum({ API, onRemoveMuseum }) {
           <p>{desc}</p>
         </div>
         <Link to="/museums" onClick={handleClick}>Delete</Link>
-        <CommentForm/>
+        <CommentForm API={API} id={id} addComment={addComment} feedback={feedback}/>
         {ratingsArray}
       </>
     );
