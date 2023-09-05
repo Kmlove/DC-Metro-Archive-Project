@@ -1,8 +1,9 @@
+import MuseumCard from "./MuseumCard"
 
-
-function MuseumList(){
+function MuseumList({museums}){
+    const renderMuseums = museums.map((museum)=>{return <MuseumCard key={museum.id} museum={museum}/>})
     return(
-        <><p>Example Text in MuseumList</p></>
+        <>{renderMuseums}</>
     )
 }
 

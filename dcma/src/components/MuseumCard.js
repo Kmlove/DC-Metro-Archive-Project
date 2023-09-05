@@ -1,8 +1,9 @@
 
 
-function MuseumCard(){
+function MuseumCard({museum}){
+    const {name} = museum
     return(
-        <></>
+        <><p>{name}</p></>
     )
 }
 
