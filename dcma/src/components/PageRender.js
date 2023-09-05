@@ -26,7 +26,7 @@ function PageRender(){
                     <Route path="/" element={<Home/>}/>
                     <Route path="/MuseumList" element={<MuseumList museums={museums}/>}/>
                     <Route path="/MuseumForm" element={<MuseumForm appendToMuseums={appendToMuseums} API={API}/>}/>
-                    <Route path="/MuseumList/:id" element={<SpecificMuseum API={API} museum={museums[0]}/>}/>
+                    <Route path="/MuseumList/:id" element={<SpecificMuseum API={API} />}/>
                 </Routes>
             </BrowserRouter>
         </div>
