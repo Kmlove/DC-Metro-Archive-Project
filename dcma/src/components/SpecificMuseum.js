@@ -36,7 +36,6 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
     const averageRating =
       arrayOfRating.reduce((partSum, a) => partSum + a, 0) /
       arrayOfRating.length;
-    console.log(averageRating);
 
     const ratingsArray = feedback.map((obj) => {
       return <CommentCard rating={obj.rating} comment={obj.comment} />;

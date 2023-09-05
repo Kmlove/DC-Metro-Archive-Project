@@ -34,12 +34,14 @@ function PageRender() {
       .then((d) => setMuseums(d));
   }, []);
 
+  const randomMuseum = museums[Math.floor(Math.random() * museums.length)];
+
   return (
     <div>
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home randomMuseum={randomMuseum} />} />
           <Route
             path="/museums"
             element={
