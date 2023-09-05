@@ -38,7 +38,13 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
       arrayOfRating.length;
 
     const ratingsArray = feedback.map((obj) => {
-      return <CommentCard rating={obj.rating} comment={obj.comment} />;
+      return (
+        <CommentCard
+          key={feedback.indexOf(obj)}
+          rating={obj.rating}
+          comment={obj.comment}
+        />
+      );
     });
 
     return (
