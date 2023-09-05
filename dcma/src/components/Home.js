@@ -11,7 +11,7 @@ function Home({ randomMuseum }) {
       arrayOfRating.length;
 
     return (
-      <>
+      <div>
         <h1>Welcome to DC Museum Archive</h1>
         <h2> Recommended Spot of the Day</h2>
         <div>
@@ -24,7 +24,7 @@ function Home({ randomMuseum }) {
           </p>
           <Link to={`/museums/${randomMuseum.id}`}>Learn More!</Link>
         </div>
-      </>
+      </div>
     );
   }
 }
