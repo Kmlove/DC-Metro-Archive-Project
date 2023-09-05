@@ -4,8 +4,8 @@ function Navbar(){
     return(
         <div>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/MuseumList">Museums</NavLink>
-            <NavLink to="/MuseumForm">Add Museum</NavLink>
+            <NavLink to="/museums">Museums</NavLink>
+            <NavLink to="/museums/new">Add Museum</NavLink>
         </div>
     )
 }

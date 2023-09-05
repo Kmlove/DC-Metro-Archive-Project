@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import CommentCard from "./CommentCard";
 import CommentForm from "./CommentForm";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-function SpecificMuseum({ API }) {
+function SpecificMuseum({ API, onRemoveMuseum }) {
 
   const [specificMuseum, setSpecificMuseum] = useState(null);
   const { id } = useParams();
@@ -13,6 +13,14 @@ function SpecificMuseum({ API }) {
     .then((res) => res.json())
     .then((data) => setSpecificMuseum(data));
   }, [id])
+
+  function handleClick(){
+    fetch(`${API}/${id}`, {
+        method: "DELETE"
+    })
+    .then(res=> res.json())
+    .then(data => onRemoveMuseum(specificMuseum))
+}
   
   if (specificMuseum === null) {
     return <h1>LOADING...</h1>;
@@ -28,6 +36,7 @@ function SpecificMuseum({ API }) {
         <div>
           <p>{desc}</p>
         </div>
+        <Link to="/museums" onClick={handleClick}>Delete</Link>
       </>
     );
   }
