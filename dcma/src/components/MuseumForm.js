@@ -1,4 +1,5 @@
 import { useState } from "react";
+import dcSubwayBackground from "./dcSubway.png"; // Import the background image
 
 function MuseumForm({ appendToMuseums, API }) {
   const initialMuseumForm = {
@@ -59,7 +60,7 @@ function MuseumForm({ appendToMuseums, API }) {
 
   const admissionInputStyle = {
     ...inputStyle,
-    marginBottom: "40px", 
+    marginBottom: "20px", // Added margin to admission input
   };
 
   const submitButtonStyle = {
@@ -75,77 +76,90 @@ function MuseumForm({ appendToMuseums, API }) {
     margin: "0 auto",
   };
 
+  const pageStyle = {
+    backgroundImage: `url(${dcSubwayBackground})`, // Set the background image
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    minHeight: "100vh", // Ensure the background covers the entire viewport
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
   return (
-    <form style={formStyle} onSubmit={handleSubmit}>
-      <label htmlFor="nameInput" style={labelStyle}>
-        Name
-      </label>
-      <input
-        type="text"
-        id="nameInput"
-        name="name"
-        onChange={handleChange}
-        value={formMuseumData.name}
-        style={inputStyle}
-      />
-      <label htmlFor="imageInput" style={labelStyle}>
-        Image
-      </label>
-      <input
-        type="text"
-        id="imageInput"
-        name="image"
-        onChange={handleChange}
-        value={formMuseumData.image}
-        style={inputStyle}
-      />
-      <label htmlFor="addressInput" style={labelStyle}>
-        Address
-      </label>
-      <input
-        type="text"
-        id="addressInput"
-        name="address"
-        onChange={handleChange}
-        value={formMuseumData.address}
-        style={inputStyle}
-      />
-      <label htmlFor="hoursInput" style={labelStyle}>
-        Hours
-      </label>
-      <input
-        type="text"
-        id="hoursInput"
-        name="hours"
-        onChange={handleChange}
-        value={formMuseumData.hours}
-        style={inputStyle}
-      />
-      <label htmlFor="descInput" style={labelStyle}>
-        Description
-      </label>
-      <textarea
-        id="descInput"
-        name="desc"
-        onChange={handleChange}
-        value={formMuseumData.desc}
-        style={{ ...inputStyle, height: "100px" }}
-      />
-      <label htmlFor="admissionInput" style={labelStyle}>
-        Admission
-      </label>
-      <input
-        type="text"
-        id="admissionInput"
-        name="admission"
-        onChange={handleChange}
-        value={formMuseumData.admission}
-        style={admissionInputStyle}
-      />
-      <button type="submit" style={submitButtonStyle}>
-        Submit
-      </button>
-    </form>
+    <div style={pageStyle}>
+      <form style={formStyle} onSubmit={handleSubmit}>
+        <label htmlFor="nameInput" style={labelStyle}>
+          Name
+        </label>
+        <input
+          type="text"
+          id="nameInput"
+          name="name"
+          onChange={handleChange}
+          value={formMuseumData.name}
+          style={inputStyle}
+        />
+        <label htmlFor="imageInput" style={labelStyle}>
+          Image
+        </label>
+        <input
+          type="text"
+          id="imageInput"
+          name="image"
+          onChange={handleChange}
+          value={formMuseumData.image}
+          style={inputStyle}
+        />
+        <label htmlFor="addressInput" style={labelStyle}>
+          Address
+        </label>
+        <input
+          type="text"
+          id="addressInput"
+          name="address"
+          onChange={handleChange}
+          value={formMuseumData.address}
+          style={inputStyle}
+        />
+        <label htmlFor="hoursInput" style={labelStyle}>
+          Hours
+        </label>
+        <input
+          type="text"
+          id="hoursInput"
+          name="hours"
+          onChange={handleChange}
+          value={formMuseumData.hours}
+          style={inputStyle}
+        />
+        <label htmlFor="descInput" style={labelStyle}>
+          Description
+        </label>
+        <textarea
+          id="descInput"
+          name="desc"
+          onChange={handleChange}
+          value={formMuseumData.desc}
+          style={{ ...inputStyle, height: "100px" }}
+        />
+        <label htmlFor="admissionInput" style={labelStyle}>
+          Admission
+        </label>
+        <input
+          type="text"
+          id="admissionInput"
+          name="admission"
+          onChange={handleChange}
+          value={formMuseumData.admission}
+          style={admissionInputStyle}
+        />
+        <button type="submit" style={submitButtonStyle}>
+          Submit
+        </button>
+      </form>
+    </div>
   );
 }
 
