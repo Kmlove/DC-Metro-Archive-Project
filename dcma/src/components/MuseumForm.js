@@ -41,7 +41,7 @@ function MuseumForm({ appendToMuseums, API }) {
     color: "#333",
     width: "600px",
     height: "600px",
-    margin: "100px auto 0",
+    margin: "50px auto 0",
     display: "flex",
     flexDirection: "column",
   };
@@ -83,12 +83,17 @@ function MuseumForm({ appendToMuseums, API }) {
     backgroundPosition: "center",
     minHeight: "100vh", // Ensure the background covers the entire viewport
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backgroundBlendMode: "lighten"
   };
 
   return (
     <div style={pageStyle}>
+      <h2>Know a museum we haven't covered? Add it here!</h2>
+      
       <form style={formStyle} onSubmit={handleSubmit}>
         <label htmlFor="nameInput" style={labelStyle}>
           Name
@@ -100,6 +105,7 @@ function MuseumForm({ appendToMuseums, API }) {
           onChange={handleChange}
           value={formMuseumData.name}
           style={inputStyle}
+          placeholder="Museum Name..."
         />
         <label htmlFor="imageInput" style={labelStyle}>
           Image
@@ -111,6 +117,7 @@ function MuseumForm({ appendToMuseums, API }) {
           onChange={handleChange}
           value={formMuseumData.image}
           style={inputStyle}
+          placeholder="Museum Image URL..."
         />
         <label htmlFor="addressInput" style={labelStyle}>
           Address
@@ -122,6 +129,7 @@ function MuseumForm({ appendToMuseums, API }) {
           onChange={handleChange}
           value={formMuseumData.address}
           style={inputStyle}
+          placeholder="Museum Address..."
         />
         <label htmlFor="hoursInput" style={labelStyle}>
           Hours
@@ -133,6 +141,7 @@ function MuseumForm({ appendToMuseums, API }) {
           onChange={handleChange}
           value={formMuseumData.hours}
           style={inputStyle}
+          placeholder="Museum Hours..."
         />
         <label htmlFor="descInput" style={labelStyle}>
           Description
@@ -142,7 +151,8 @@ function MuseumForm({ appendToMuseums, API }) {
           name="desc"
           onChange={handleChange}
           value={formMuseumData.desc}
-          style={{ ...inputStyle, height: "100px" }}
+          style={{ ...inputStyle, height: "100px", fontFamily: "Arial" }}
+          placeholder="Museum Name..."
         />
         <label htmlFor="admissionInput" style={labelStyle}>
           Admission
@@ -154,11 +164,13 @@ function MuseumForm({ appendToMuseums, API }) {
           onChange={handleChange}
           value={formMuseumData.admission}
           style={admissionInputStyle}
+          placeholder="If admission is free, please enter: 0"
         />
         <button type="submit" style={submitButtonStyle}>
           Submit
         </button>
       </form>
+      
     </div>
   );
 }
