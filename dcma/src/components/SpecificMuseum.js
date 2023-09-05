@@ -90,7 +90,7 @@ const containerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh",
+  height: "5%",
   backgroundImage: `url(${usCapitolBackground})`,
   backgroundSize: "cover",
   backgroundColor: "rgba(255, 255, 255, 0.6)",
@@ -111,10 +111,9 @@ const headerStyle = {
 
 const imageStyle = {
   maxWidth: "100%",
-  width: "500px",
-  height: "400px",
+  width: "50%",
+  height: "40%",
   borderRadius: "5px",
-  marginTop: "10px",
 };
 
 const admissionFreeStyle = {

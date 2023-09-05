@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import dcSubwayBackground from "./dcSubway.png"; // Import the background image
 
 function Home({ randomMuseum }) {
   if (randomMuseum === undefined) {
@@ -41,6 +42,18 @@ function Home({ randomMuseum }) {
 const containerStyle = {
   textAlign: "center",
   padding: "20px",
+  backgroundImage: `url(${dcSubwayBackground})`, // Set the background image
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  minHeight: "100vh", // Ensure the background covers the entire viewport
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor: "rgba(255, 255, 255, 0.8)",
+  backgroundBlendMode: "lighten"
+  
 };
 
 const titleStyle = {
