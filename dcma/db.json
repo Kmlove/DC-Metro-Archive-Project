@@ -8,8 +8,8 @@
       "desc": "This medical history museum is not for the faint of heart! The gory history of medicine in the United States is on full display in this army-run museum, so make sure all kids (or people with delicate stomachs) are forewarned for the best possible time.",
       "admission": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walter_Reed_Army_Hospital%2C_Washington%2C_D.C.%2C_prior_to_its_closing_in_2011.jpg/440px-Walter_Reed_Army_Hospital%2C_Washington%2C_D.C.%2C_prior_to_its_closing_in_2011.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
+     
     },
     {
       "id": 2,
@@ -19,8 +19,7 @@
       "desc": "This private art museum exhibits modern and contemporary art in a decadent vintage mansion! Younger kids might get antsy in this local fave, but tweens and up will be enthralled and included by innovative community programming.",
       "admission": "tickets are $16 for adults, with member, senior, student, and child discounts available",
       "image": "https://sideofculture.com/wp-content/uploads/2022/01/Phillips-Collection-original-house-exterior-1024x768.jpeg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 3,
@@ -30,8 +29,7 @@
       "desc": "This Smithsonian art museum houses mind-bending modern and contemporary works both indoors and outdoors. The sculpture garden's giant shapes are perfect for kids to run around, too!",
       "admission": 0,
       "image": "https://hirshhorn.si.edu/wp-content/uploads/2017/11/Sculpture-Garden-in-Spring-2016-batched-5.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 4,
@@ -41,8 +39,7 @@
       "desc": "This public art museum has something for everyone! One wing for old art, one wing for new art!",
       "admission": 0,
       "image": "https://static01.nyt.com/images/2021/05/14/arts/13nationalgallery-1/13nationalgallery-1",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 5,
@@ -52,8 +49,7 @@
       "desc": "Lions and tigers and pandas, oh my! This scientific family favorite Smithsonian park is one of the oldest zoos in the country, and home to over 2,100 animals and world-famous educational offerings!",
       "admission": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Washington_Zoo_entrance.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 6,
@@ -63,8 +59,7 @@
       "desc": "Check out the world's largest collection of artifacts of aviation and space exploration! Come for the moon rocks, stay for this Smithsonian science museum's state-of-the-art planetarium, kid-friendly programming. and vintage planes!",
       "admission": 0,
       "image": "https://www.usatoday.com/gcdn/-mm-/9a10d18443197ab9a2a837953a60ea6375b5467c/c=4-0-1916-1080/local/-/media/2018/09/28/USATODAY/USATODAY/636737436809401289-15-SmithsonianAirSpace-Sean-Pavone-shutterstock-472741981.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 7,
@@ -74,8 +69,7 @@
       "desc": "This expansive new Smithsonian museum honors African American history, art, and culture! Current exhibitions include a test kitchen, illuminating artifacts from the March on Washington, and an amazing new show about Afrofuturism. Mindful programming for kids includes and educates the whole family!",
       "admission": 0,
       "image": "https://ids.si.edu/ids/deliveryService?id=https://www.si.edu/sites/default/files/images/nmaahc-1000x675.jpg&max_w=600",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 8,
@@ -85,8 +79,7 @@
       "desc": "This classic Smithsonian science museum explores our fascinating planet, from the big bang until now! Spectacular gemstones, a huge living bug collection, dinosaurs galore, and many more make this a family-friendly find!",
       "admission": 0,
       "image": "https://www.tripsavvy.com/thmb/zWftBjy0lL7qj2D5QlJW661y27U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VDC_9257-e7a4636add0049b899d5be79b9fad9ad.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 9,
@@ -96,8 +89,7 @@
       "desc": "This high-octane private museum teaches visitors about the how, why, and what of spycraft through history, all the way up to the present. Crack codes, pick out gadgets, and play a role in an elaborate cinematic mission. Kids of all ages are welcome, but the museum is recommended for people 9+.",
       "admission": "$32.95 for adults, with discounts for students, children, seniors, and military servicepeople",
       "image": "https://nohomejustroam.com/wp-content/uploads/2020/10/International-Spy-Museum.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 10,
@@ -107,8 +99,7 @@
       "desc": "This spectacular Smithsonian museum celebrates and honors the diverse culture, art and history of Native American communities from all over the continent. Come to this family favorite for the incredible events, inclusive programming, and exhibits, and stay for the delicious food innovated by indigenous chefs in traditional foodways!",
       "admission": 0,
       "image": "https://ids.si.edu/ids/deliveryService?id=https://www.si.edu/content/img/museums/banner/nmai.jpg&max_w=600",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 11,
@@ -118,8 +109,7 @@
       "desc": "This well-kept Northwest secret is a private art museum well off the beaten path, filled with modern and contemporary gems both inside the house, and outside in the sculpture garden, where there are also concerts! Great for a quiet walk. Space is limited and the venue is quiet, so be mindful of small kids.",
       "admission": "$10 for adults, with discounts for kids, seniors, students, and military service people.",
       "image": "https://0d53a35ccf6c1b73db42-2ab649be0a06e8d138dbd96e3457e3f2.ssl.cf2.rackcdn.com/16194-4.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 12,
@@ -129,8 +119,7 @@
       "desc": "This Smithsonian art museum honors artwork from across Asia dating from the neolithic period all the way up to the early 20th century. The spectacular art and unique educational programs are a great fit for families with older kids, and the free concerts and film screenings (often co-sponsored with embassies) are a closely-guarded local secret!",
       "admission": 0,
       "image": "https://ids.si.edu/ids/deliveryService?id=https://www.si.edu/sites/default/files/images/freer-gallery.jpg&max_w=600",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 13,
@@ -140,8 +129,7 @@
       "desc": "This family-friendly crowd-pleaser of a science museum is dedicated to engineering, design, architecture, and urban planning. A diverse range of programming in a decadent old building make this museum a hit with builders of all ages.",
       "admission": "$10 adults $7 kids",
       "image": "https://img.atlasobscura.com/_RYwyew7QxmLKizCIB70fZDjF2icgaXIN22aMBqw0is/rs:fill:580:580:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83NDFh/ODk3YWEyMGUwY2Zh/NjdfMTQ2MjYwMDg3/OThfNWY1MzYxNWU5/Zl9vLmpwZw.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 14,
@@ -151,8 +139,7 @@
       "desc": "The historic house and grounds that make up this national park were the home of American abolitionist Frederick Douglass for over 20 years. Come take a tour and learn more about Douglass' life and work to reshape our nation. Tour guides are able to educate and accommodate even the youngest kids.",
       "admission": "Free, reservations are required, no entry without a tour",
       "image": "https://www.nps.gov/common/uploads/grid_builder/frdo/crop16_9/10399185-1DD8-B71B-0B3A595790E8119A.jpg?width=1300&quality=90&mode=crop",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 15,
@@ -162,8 +149,7 @@
       "desc": "Even though this under-the-radar new private art museum isn't technically in DC, it's still worth a visit. Half hilly hiking trails, and half monumental outdoor sculptures and pavilions, this spot is for folks who like their art with a side of cardio. Since this museum is so walking-heavy, official rules state that all visitors must be over 12 years old.",
       "admission": 0,
       "image": "https://visitmontgomery.com/wp-content/uploads/2020/07/1_Approach-to-the-Pavilions_Iwan-Baan_Glenstone-Museum-1.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 16,
@@ -173,8 +159,7 @@
       "desc": "This art museum in the heart of historic Georgetown houses an impressive collection of Byzantine and Pre-Columbian art in an old mansion surrounded by gorgeous historic gardens. Older kids will feel welcome in this quiet sanctum!",
       "admission": 0,
       "image": "https://media.cntraveler.com/photos/55ce1cc6c47ae13868ae443f/16:9/w_2560,c_limit/dumbarton-oaks-exterior-washington-dc.jpg",
-      "rating": [],
-      "comment": []
+      "feeback": []
     },
     {
       "id": 17,
@@ -184,8 +169,7 @@
       "desc": "This Smithsonian history museum is dedicated to the evolution of mail delivery and stamp collecting in the U.S. since the country's founding. This stamp collectors' paradise has a surprisingly huge collection of vintage airplanes and a great education program, making it a hit with kids!",
       "admission": 0,
       "image": "https://lh3.googleusercontent.com/p/AF1QipOTDdWP9edu_D4KgAWYnrP7l-4cfHdAbMReQkva=s1360-w1360-h1020",
-      "rating": [],
-      "comment": []
+      "feeback": []
     }
   ]
 }

@@ -25,7 +25,10 @@ function SpecificMuseum({ API, onRemoveMuseum }) {
   if (specificMuseum === null) {
     return <h1>LOADING...</h1>;
   } else {
-    const {name, admission, comment, desc, hours, image, rating} = specificMuseum
+    const {name, admission, desc, hours, image, feeback} = specificMuseum
+    const ratingsArray = feeback.map(obj => {
+      return <CommentCard rating={obj.rating} comment={obj.comment}/>
+    })
     return (
       <>
         <div>
@@ -37,6 +40,8 @@ function SpecificMuseum({ API, onRemoveMuseum }) {
           <p>{desc}</p>
         </div>
         <Link to="/museums" onClick={handleClick}>Delete</Link>
+        <CommentForm/>
+        {ratingsArray}
       </>
     );
   }
