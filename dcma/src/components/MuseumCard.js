@@ -22,30 +22,36 @@ function MuseumCard({museum, API, onRemoveMuseum}){
               : averageRating}</h4>
             <img style={ImgStyle} src={image}></img>
             <br></br>
-            <Link className="SeeMore" to={`/museums/${id}`}>See More</Link>
-            <button onClick={handleClick} style={DeleteStyle} className="DelBtn" >Delete</button>
+            <div style={DivBtnStyle}>
+               <div><Link className="SeeMore" to={`/museums/${id}`}>See More</Link></div>
+               <button onClick={handleClick} className="DelBtn" >Delete</button>
+            </div>
         </div>
     )
 }
 
 const CardStyle = {
-    width: "25%",
+    width: "45%",
+    height: "450px",
+    maxWidth: "800px",
     backgroundColor: "#f0f0f0",
-    padding: "20px",
+    padding: "5px 10px",
     borderRadius: "10px",
     boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
     marginBottom: "20px",
-    flex: "35%"
+    textAlign: "center",
   };
 
 const ImgStyle = {
     display: "block",
-    width: "75%",
+    width: "80%",
+    height: "55%",
     margin: "0 auto",
  }
 
-const DeleteStyle = {
-
+const DivBtnStyle = {
+    display: "flex",
+    justifyContent: "space-between",
 }
 
 export default MuseumCard
