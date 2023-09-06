@@ -33,7 +33,10 @@ function CommentForm({ API, id, feedback, addComment }) {
       body: JSON.stringify({ feedback: data }),
     })
       .then((res) => res.json())
-      .then((data) => addComment(data));
+      .then((data) => {
+        addComment(data)
+        setFeedbackFormData(initialValue)
+      });
   }
 
   return (
