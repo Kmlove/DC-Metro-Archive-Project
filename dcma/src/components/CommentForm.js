@@ -34,16 +34,22 @@ function CommentForm({ API, id, feedback, addComment }) {
     })
       .then((res) => res.json())
       .then((data) => {
-        addComment(data)
-        setFeedbackFormData(initialValue)
+        addComment(data);
+        setFeedbackFormData(initialValue);
       });
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div style={formGroupStyle}>
-        <label htmlFor="rating">Rating (Please enter a number 1-5):</label>
+    <form style={formStyle} onSubmit={handleSubmit}>
+      <div style={inputStyle}>
+        <label htmlFor="rating">Rating (Please enter a number 1-5): </label>
         <input
+          style={{
+            height: "40px",
+            width: "40px",
+            fontSize: "20px",
+            padding: "5px",
+          }}
           type="number"
           step="1"
           min="0"
@@ -54,9 +60,17 @@ function CommentForm({ API, id, feedback, addComment }) {
           onChange={handleChange}
         />
       </div>
-      <div style={formGroupStyle}>
+      <div style={inputStyle}>
         <label htmlFor="comment">Comment:</label>
+        <br></br>
         <textarea
+          style={{
+            height: "150px",
+            width: "300px",
+            fontSize: "20px",
+            fontFamily: "Arial",
+            padding: "5px",
+          }}
           id="comment"
           name="comment"
           value={feedbackFormData.comment}
@@ -64,15 +78,33 @@ function CommentForm({ API, id, feedback, addComment }) {
           rows="4" // Adjust the number of rows to control the comment box size
         />
       </div>
-      <div style={formGroupStyle}>
+      <div style={inputStyle}>
         <input type="submit" />
       </div>
     </form>
   );
 }
 
-export default CommentForm;
-
-const formGroupStyle = {
-  marginBottom: "15px",
+const formStyle = {
+  backgroundColor: "#f5f5f5",
+  padding: "20px",
+  borderRadius: "10px",
+  boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+  color: "#333",
+  width: "450px",
+  height: "350px",
+  margin: "50px auto 0",
+  display: "flex",
+  flexDirection: "column",
 };
+
+const inputStyle = {
+  padding: "10px",
+  marginBottom: "10px",
+  borderRadius: "5px",
+  fontWeight: "bold",
+  fontFamily: "Arial",
+  fontSize: "20px",
+};
+
+export default CommentForm;
