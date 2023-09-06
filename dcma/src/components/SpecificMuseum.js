@@ -79,6 +79,7 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
             addComment={addComment}
             feedback={feedback}
           />
+          <h2>Previous Users' Ratings and Comments:</h2>
           {ratingsArray}
         </div>
       </div>

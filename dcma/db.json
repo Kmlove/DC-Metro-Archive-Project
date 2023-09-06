@@ -8,7 +8,12 @@
       "desc": "This medical history museum is not for the faint of heart! The gory history of medicine in the United States is on full display in this army-run museum, so make sure all kids (or people with delicate stomachs) are forewarned for the best possible time.",
       "admission": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walter_Reed_Army_Hospital%2C_Washington%2C_D.C.%2C_prior_to_its_closing_in_2011.jpg/440px-Walter_Reed_Army_Hospital%2C_Washington%2C_D.C.%2C_prior_to_its_closing_in_2011.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 2,
+          "comment": "Why did I bring my date here? Breakup central."
+        }
+      ]
     },
     {
       "id": 2,
@@ -138,8 +143,7 @@
       "desc": "The historic house and grounds that make up this national park were the home of American abolitionist Frederick Douglass for over 20 years. Come take a tour and learn more about Douglass' life and work to reshape our nation. Tour guides are able to educate and accommodate even the youngest kids. Reservations are required, no entry without a tour",
       "admission": 0,
       "image": "https://www.nps.gov/common/uploads/grid_builder/frdo/crop16_9/10399185-1DD8-B71B-0B3A595790E8119A.jpg?width=1300&quality=90&mode=crop",
-      "feedback": [
-      ]
+      "feedback": []
     },
     {
       "id": 15,
