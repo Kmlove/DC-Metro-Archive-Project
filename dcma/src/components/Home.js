@@ -16,7 +16,7 @@ function Home({ randomMuseum }) {
         <h1 style={titleStyle}>Welcome to DC Museum Archive</h1>
         <WeatherWidget />
         <div style={recommendedSpotContainerStyle}>
-          <h2 style={subtitleStyle}>Recommended Spot of the Day</h2>
+          <h2 style={subtitleStyle}>Spot of the Day</h2>
           <div style={cardStyle}>
             <h3 style={museumNameStyle}>{randomMuseum.name}</h3>
             <div style={imageContainerStyle}>
@@ -62,11 +62,11 @@ const titleStyle = {
   fontSize: "48px", // Increase font size
   fontWeight: "bold",
   color: "#1E90FF",
-  marginBottom: "80px", // Add more distance below the title
+  marginBottom: "45px", // Add more distance below the title
 };
 
 const recommendedSpotContainerStyle = {
-  width: "50%",
+  width: "75%",
   margin: "0 auto",
   backgroundColor: "#f0f0f0",
   padding: "20px",
@@ -76,7 +76,7 @@ const recommendedSpotContainerStyle = {
 };
 
 const subtitleStyle = {
-  fontSize: "24px",
+  fontSize: "30px",
   color: "#333",
 };
 
