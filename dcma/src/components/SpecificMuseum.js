@@ -71,7 +71,7 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
             <p style={descriptionTextStyle}>{desc}</p>
           </div>
           <Link to="/museums" onClick={handleClick} style={linkStyle}>
-            Delete
+            Delete Museum
           </Link>
           <CommentForm
             API={API}
@@ -104,7 +104,7 @@ const centeredContent = {
   textAlign: "center",
   width: "70%",
   height: "50%",
-  margin: "0 auto",
+  margin: "25px auto",
   backgroundColor: "#f0f0f0",
   padding: "20px",
   borderRadius: "10px",
@@ -113,7 +113,7 @@ const centeredContent = {
 };
 
 const headerStyle = {
-  fontSize: "28px",
+  fontSize: "40px",
   fontWeight: "bold",
   color: "#1E90FF",
   fontFamily: "Arial, sans-serif",
@@ -129,11 +129,13 @@ const imageStyle = {
 const admissionFreeStyle = {
   color: "#28a745",
   fontWeight: "bold",
+  fontSize: "25px"
 };
 
 const admissionStyle = {
   color: "#dc3545",
   fontWeight: "bold",
+  fontSize: "25px"
 };
 
 const descriptionStyle = {
@@ -158,6 +160,7 @@ const linkStyle = {
   color: "#007bff",
   fontWeight: "bold",
   marginLeft: "10px",
+  fontSize: "25px"
 };
 
 export default SpecificMuseum;

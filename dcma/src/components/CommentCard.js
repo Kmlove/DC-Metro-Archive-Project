@@ -9,13 +9,12 @@ function CommentCard({ comment, rating }) {
     marginBottom: "10px",
     borderRadius: "5px",
     gap: "10px",
-    textAlign: "left",
-    display: "inline",
+    textAlign: "center",
   };
   return (
     <div style={cardStyle}>
-      <h4>{rating}</h4>
-      <p>{comment}</p>
+      <h4 style={{display: "inline"}}>{rating}  </h4>
+      <p style={{display: "inline"}}>{comment}</p>
     </div>
   );
 }

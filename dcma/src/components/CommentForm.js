@@ -46,9 +46,10 @@ function CommentForm({ API, id, feedback, addComment }) {
         <input
           style={{
             height: "40px",
-            width: "40px",
+            width: "50px",
             fontSize: "20px",
             padding: "5px",
+            textAlign: "center"
           }}
           type="number"
           step="1"
@@ -78,8 +79,8 @@ function CommentForm({ API, id, feedback, addComment }) {
           rows="4" // Adjust the number of rows to control the comment box size
         />
       </div>
-      <div style={inputStyle}>
-        <input type="submit" />
+      <div style={{inputStyle}}>
+        <input className="submitBtn" type="submit" />
       </div>
     </form>
   );
@@ -92,7 +93,7 @@ const formStyle = {
   boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
   color: "#333",
   width: "450px",
-  height: "350px",
+  height: "375px",
   margin: "50px auto 0",
   display: "flex",
   flexDirection: "column",
