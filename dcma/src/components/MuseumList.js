@@ -1,5 +1,7 @@
 import MuseumCard from "./MuseumCard"
-import dcSubwayBackground from "./dcSubway.png";
+// import dcSubwayBackground from "./dcSubway.png";
+import dcSubwayBackground from "../Images/dcSubway.png"; // Import the background image
+
 
 function MuseumList({museums, API, onRemoveMuseum}){
 
