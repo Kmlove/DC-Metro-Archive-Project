@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 
 function MuseumCard({museum, API, onRemoveMuseum}){
-    const {name, id, feedback} = museum
+    const {name, id, feedback, image} = museum
     
     function handleClick(){
         fetch(`${API}/${id}`, {
@@ -15,13 +15,15 @@ function MuseumCard({museum, API, onRemoveMuseum}){
     const averageRating = arrayOfRating.reduce((partSum, a) => partSum + a, 0)/arrayOfRating.length;
     return(
         <div style={CardStyle} className="MuseumCard">
-            <p>{name}</p>
-            <p>Average Rating:{" "}
+            <h3>{name}</h3>
+            <h4>Average Rating:{" "}
             {isNaN(averageRating)
               ? "No ratings yet"
-              : averageRating}</p>
-            <Link to={`/museums/${id}`}>See More...</Link>
-            <button onClick={handleClick}>Delete</button>
+              : averageRating}</h4>
+            <img style={ImgStyle} src={image}></img>
+            <br></br>
+            <Link className="SeeMore" to={`/museums/${id}`}>See More</Link>
+            <button onClick={handleClick} style={DeleteStyle} className="DelBtn" >Delete</button>
         </div>
     )
 }
@@ -33,6 +35,17 @@ const CardStyle = {
     borderRadius: "10px",
     boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
     marginBottom: "20px",
+    flex: "35%"
   };
+
+const ImgStyle = {
+    display: "block",
+    width: "75%",
+    margin: "0 auto",
+ }
+
+const DeleteStyle = {
+
+}
 
 export default MuseumCard
