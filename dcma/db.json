@@ -58,8 +58,7 @@
       "desc": "Check out the world's largest collection of artifacts of aviation and space exploration! Come for the moon rocks, stay for this Smithsonian science museum's state-of-the-art planetarium, kid-friendly programming. and vintage planes!",
       "admission": 0,
       "image": "https://www.usatoday.com/gcdn/-mm-/9a10d18443197ab9a2a837953a60ea6375b5467c/c=4-0-1916-1080/local/-/media/2018/09/28/USATODAY/USATODAY/636737436809401289-15-SmithsonianAirSpace-Sean-Pavone-shutterstock-472741981.jpg",
-      "feedback": [
-      ]
+      "feedback": []
     },
     {
       "id": 7,
@@ -136,8 +135,8 @@
       "name": "Frederick Douglass National Historic Site",
       "address": "1411 W St SE, Washington, DC 20020",
       "hours": "9a.m. - 5p.m. ET, Tuesday, Wednesday, Saturday only",
-      "desc": "The historic house and grounds that make up this national park were the home of American abolitionist Frederick Douglass for over 20 years. Come take a tour and learn more about Douglass' life and work to reshape our nation. Tour guides are able to educate and accommodate even the youngest kids.",
-      "admission": "Free, reservations are required, no entry without a tour",
+      "desc": "The historic house and grounds that make up this national park were the home of American abolitionist Frederick Douglass for over 20 years. Come take a tour and learn more about Douglass' life and work to reshape our nation. Tour guides are able to educate and accommodate even the youngest kids. Reservations are required, no entry without a tour",
+      "admission": 0,
       "image": "https://www.nps.gov/common/uploads/grid_builder/frdo/crop16_9/10399185-1DD8-B71B-0B3A595790E8119A.jpg?width=1300&quality=90&mode=crop",
       "feedback": []
     },

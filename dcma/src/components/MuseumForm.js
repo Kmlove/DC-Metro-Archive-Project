@@ -22,7 +22,7 @@ function MuseumForm({ appendToMuseums, API }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    const newMuseum = { ...formMuseumData, comment: [], rating: [] };
+    const newMuseum = { ...formMuseumData, feedback: [] };
     fetch(API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

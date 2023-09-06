@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import dcSubwayBackground from "../Images/dcSubway.png"; // Import the background image
+import dcSubwayBackground from "./dcSubway.png"; // Import the background image
+import WeatherWidget from "./Weather";
 
 function Home({ randomMuseum }) {
   if (randomMuseum === undefined) {
@@ -13,6 +15,7 @@ function Home({ randomMuseum }) {
     return (
       <div style={containerStyle}>
         <h1 style={titleStyle}>Welcome to DC Museum Archive</h1>
+        <WeatherWidget />
         <div style={recommendedSpotContainerStyle}>
           <h2 style={subtitleStyle}>Recommended Spot of the Day</h2>
           <div style={cardStyle}>
@@ -126,8 +129,6 @@ const linkStyle = {
 };
 
 export default Home;
-
-
 
 
 
