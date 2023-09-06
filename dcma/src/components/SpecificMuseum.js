@@ -92,6 +92,7 @@ const containerStyle = {
   alignItems: "center",
   height: "5%",
   backgroundImage: `url(${usCapitolBackground})`,
+  minHeight: "100vh",
   backgroundSize: "cover",
   backgroundColor: "rgba(255, 255, 255, 0.6)",
   backgroundBlendMode: "lighten",
@@ -100,6 +101,14 @@ const containerStyle = {
 
 const centeredContent = {
   textAlign: "center",
+  width: "70%",
+  height: "50%",
+  margin: "0 auto",
+  backgroundColor: "#f0f0f0",
+  padding: "20px",
+  borderRadius: "10px",
+  boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+  marginBottom: "20px",
 };
 
 const headerStyle = {
@@ -127,21 +136,20 @@ const admissionStyle = {
 };
 
 const descriptionStyle = {
-  backgroundColor: "#f8f9fa",
-  padding: "20px",
-  marginTop: "20px",
-  borderRadius: "5px",
-  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-  fontFamily: "Arial, sans-serif",
   fontSize: "18px",
-  lineHeight: "1.5",
-  color: "#333",
+  lineHeight: "1.4",
+  color: "#555",
+  marginBottom: "10px",
+  maxWidth: "95%",
+  display: "flex",
+  margin: "0 auto",
 };
 
 const descriptionTextStyle = {
   color: "#333",
   fontSize: "25px",
   fontFamily: "Arial, sans-serif",
+  fontWeight: "bold",
 };
 
 const linkStyle = {
