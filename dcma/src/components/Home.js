@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import dcSubwayBackground from "./dcSubway.png"; // Import the background image
+import dcSubwayBackground from "../Images/dcSubway.png"; // Import the background image
 
 function Home({ randomMuseum }) {
   if (randomMuseum === undefined) {

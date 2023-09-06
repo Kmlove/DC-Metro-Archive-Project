@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CommentCard from "./CommentCard";
 import CommentForm from "./CommentForm";
 import { Link, useParams } from "react-router-dom";
-import usCapitolBackground from "./capitalPhoto.jpeg";
+import usCapitolBackground from "../Images/capitalPhoto.jpeg";
 
 function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
   const [specificMuseum, setSpecificMuseum] = useState(null);
@@ -91,6 +91,7 @@ const containerStyle = {
   justifyContent: "center",
   alignItems: "center",
   height: "5%",
+  border: "1px solid black",
   backgroundImage: `url(${usCapitolBackground})`,
   backgroundSize: "cover",
   backgroundColor: "rgba(255, 255, 255, 0.6)",

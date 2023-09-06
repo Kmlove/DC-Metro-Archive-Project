@@ -1,5 +1,5 @@
 import { useState } from "react";
-import dcSubwayBackground from "./dcSubway.png"; // Import the background image
+import dcSubwayBackground from "../Images/dcSubway.png"; // Import the background image
 
 function MuseumForm({ appendToMuseums, API }) {
   const initialMuseumForm = {
