@@ -159,7 +159,23 @@
       "desc": "Even though this under-the-radar new private art museum isn't technically in DC, it's still worth a visit. Half hilly hiking trails, and half monumental outdoor sculptures and pavilions, this spot is for folks who like their art with a side of cardio. Since this museum is so walking-heavy, official rules state that all visitors must be over 12 years old.",
       "admission": 0,
       "image": "https://visitmontgomery.com/wp-content/uploads/2020/07/1_Approach-to-the-Pavilions_Iwan-Baan_Glenstone-Museum-1.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 1,
+          "comment": "Big sculptures don't have AC wtf it's HOTTTT",
+          "likes": 0
+        },
+        {
+          "rating": 4,
+          "comment": "Love big metal boys",
+          "likes": 0
+        },
+        {
+          "rating": 3,
+          "comment": "I got chased by a wild turkey but the art was cool I guess",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 16,
