@@ -74,7 +74,7 @@ function MuseumForm({ appendToMuseums, API }) {
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(255, 255, 255, 0.8)",
-    backgroundBlendMode: "lighten"
+    backgroundBlendMode: "lighten",
   };
 
   const subheaderStyles = {
@@ -84,12 +84,14 @@ function MuseumForm({ appendToMuseums, API }) {
     marginBottom: "20px", // Add more distance below the title
     marginTop: "-80px",
     textAlign: "center",
-  }
+  };
 
   return (
     <div style={pageStyle}>
-      <h2 style={subheaderStyles}>Know a museum we haven't covered? Add it here!</h2>
-      
+      <h2 style={subheaderStyles}>
+        Know a museum we haven't covered? Add it here!
+      </h2>
+
       <form style={formStyle} onSubmit={handleSubmit}>
         <label htmlFor="nameInput" style={labelStyle}>
           Name
@@ -162,11 +164,10 @@ function MuseumForm({ appendToMuseums, API }) {
           style={admissionInputStyle}
           placeholder="If admission is free, please enter: 0"
         />
-        <button type="submit" className="submitBtn" >
+        <button type="submit" className="submitBtn">
           Submit
         </button>
       </form>
-      
     </div>
   );
 }
