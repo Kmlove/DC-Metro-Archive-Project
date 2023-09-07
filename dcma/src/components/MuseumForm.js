@@ -1,5 +1,6 @@
 import { useState } from "react";
 import dcSubwayBackground from "../Images/dcSubway.png"; // Import the background image
+import { useNavigate } from "react-router-dom";
 
 function MuseumForm({ appendToMuseums, API }) {
   const initialMuseumForm = {
@@ -11,6 +12,7 @@ function MuseumForm({ appendToMuseums, API }) {
     desc: "",
   };
   const [formMuseumData, setFormMuseumData] = useState(initialMuseumForm);
+  const navigate = useNavigate();
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -29,8 +31,11 @@ function MuseumForm({ appendToMuseums, API }) {
       body: JSON.stringify(newMuseum),
     })
       .then((r) => r.json())
-      .then((d) => appendToMuseums(d));
-    setFormMuseumData(initialMuseumForm);
+      .then((d) => {
+        appendToMuseums(d);
+        setFormMuseumData(initialMuseumForm);
+        navigate(`/museums/${d.id}`);
+      });
   }
 
   const formStyle = {

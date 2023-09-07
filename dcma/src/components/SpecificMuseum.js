@@ -30,7 +30,11 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
   if (specificMuseum === null) {
     return <h1>LOADING...</h1>;
   } else {
-    const { name, admission, desc, image, feedback } = specificMuseum;
+    let { name, admission, desc, image, feedback } = specificMuseum;
+    if (image === "") {
+      image =
+        "https://w7.pngwing.com/pngs/169/68/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text.png";
+    }
 
     const arrayOfRating = feedback.map((Obj) => Obj.rating);
     const averageRating =
@@ -64,8 +68,16 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
               ? "No ratings yet- be the first!"
               : averageRating}
           </h3>
-          <p style={admission === 0 ? admissionFreeStyle : admissionStyle}>
-            {admission === 0 ? "Free Admission" : "Paid Admission"}
+          <p
+            style={
+              admission === 0 || admission === "0"
+                ? admissionFreeStyle
+                : admissionStyle
+            }
+          >
+            {admission === 0 || admission === "0"
+              ? "Free Admission"
+              : "Paid Admission"}
           </p>
           <div style={descriptionStyle}>
             <p style={descriptionTextStyle}>{desc}</p>
@@ -130,13 +142,13 @@ const imageStyle = {
 const admissionFreeStyle = {
   color: "#28a745",
   fontWeight: "bold",
-  fontSize: "25px"
+  fontSize: "25px",
 };
 
 const admissionStyle = {
   color: "#dc3545",
   fontWeight: "bold",
-  fontSize: "25px"
+  fontSize: "25px",
 };
 
 const descriptionStyle = {
@@ -161,7 +173,7 @@ const linkStyle = {
   color: "#007bff",
   fontWeight: "bold",
   marginLeft: "10px",
-  fontSize: "25px"
+  fontSize: "25px",
 };
 
 export default SpecificMuseum;
