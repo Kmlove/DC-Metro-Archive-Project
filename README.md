@@ -5,12 +5,8 @@ The DC Museum Archive is a rating application for museums in the nation's capita
 
 The landing page will display a random recommended museum of the day. Using the navbar at the top a user can find a specific museum, or add a museum missing from the database. Users will be able to review and rate the museums available. They can also update or delete their own reviews on the site and remove museums that have closed. We hope you enjoy your visit to DC and its wonderfull museums! Check out the video below showing the site in action!
 
-
-
-https://youtu.be/LUXA4KcCaxI
-
-
-
+## Website Demo Video
+[DCMA Demo Video](https://youtu.be/LUXA4KcCaxI)
 
 ## Database
 We will be creating our own db.json that will look similar to below:
