@@ -36,21 +36,44 @@ function WeatherWidget() {
     textAlign: "center", // Center the content
   };
 
+  const weatherContainer = {
+    width: "400px",
+    margin: "0 auto",
+    backgroundColor: "#f0f0f0",
+    padding: "20px",
+    borderRadius: "10px",
+    boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+    marginBottom: "20px",
+  }
+
+  const containerStyles = {
+    display: "flex",
+    justifyContent: "center",
+    gap: "20px"
+  }
+
   return (
-    <div style={weatherWidgetStyle}>
-      <h2>Weather</h2>
-      {loading && <p>Loading weather data...</p>}
-      {weatherData && (
-        <div>
-          <h3>Weather in {weatherData.location.name}, {weatherData.location.region}</h3>
-          <p>Temperature: {weatherData.current.temp_f} °F</p>
-          <p>Humidity: {weatherData.current.humidity}%</p>
-          <img
-            src={weatherData.current.condition.icon}
-            alt={weatherData.current.condition.text}
-          />
-        </div>
-      )}
+    <div style={weatherContainer}>
+      <div style={weatherWidgetStyle}>
+        
+        {loading && <p>Loading weather data...</p>}
+        {weatherData && (
+          <div>
+            <h3>Weather in {weatherData.location.name}, {weatherData.location.region}</h3>
+            <div style={containerStyles}>
+              <div>
+                <p>Temperature: {weatherData.current.temp_f} °F</p>
+                <p>Humidity: {weatherData.current.humidity}%</p>
+              </div>
+              <img
+                src={weatherData.current.condition.icon}
+                alt={weatherData.current.condition.text}
+                style={{width: "40%"}}
+              />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
