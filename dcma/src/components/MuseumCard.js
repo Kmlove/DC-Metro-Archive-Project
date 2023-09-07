@@ -53,7 +53,7 @@ function MuseumCard({ museum, API, onRemoveMuseum, museums }) {
       <h3>{name}</h3>
       <h4>
         Average Rating:{" "}
-        {isNaN(averageRating) ? "No ratings yet" : averageRating}
+        {isNaN(averageRating) ? "No ratings yet" : averageRating.toFixed(2)}
       </h4>
       <img style={ImgStyle} src={image}></img>
       <br></br>

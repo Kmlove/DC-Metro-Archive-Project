@@ -69,7 +69,7 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
             Average Rating:{" "}
             {isNaN(averageRating)
               ? "No ratings yet- be the first!"
-              : averageRating}
+              : averageRating.toFixed(2)}
           </h3>
           <p
             style={
