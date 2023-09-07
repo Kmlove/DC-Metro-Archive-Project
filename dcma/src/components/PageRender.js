@@ -9,6 +9,10 @@ const API = "http://localhost:3001/museums";
 
 function PageRender() {
   const [museums, setMuseums] = useState([]);
+  const [search, setSearch] = useState("")
+  const [isFree, setIsFree] = useState(false)
+  const [filteredMuseums, setFilteredMuseums] = useState([])
+
   function appendToMuseums(newMuseum) {
     setMuseums([...museums, newMuseum]);
   }
@@ -28,13 +32,37 @@ function PageRender() {
     });
     setMuseums(updatedMuseums);
   }
+  function onSearchBarChange(value){
+    setSearch(value)
+  }
+  function onIsFreeChange(value){
+    setIsFree(value)
+  }
+
   useEffect(() => {
     fetch(API)
       .then((r) => r.json())
-      .then((d) => setMuseums(d));
+      .then((d) => {
+        setMuseums(d)
+        setFilteredMuseums(d)
+      });
   }, []);
 
   const randomMuseum = museums[Math.floor(Math.random() * museums.length)];
+
+
+ useEffect(()=>{
+  if(isFree){
+    const filteredMuseums = museums.filter(museum => museum.admission === 0)
+    setFilteredMuseums(filteredMuseums.filter(museum => {
+      return museum.name.toLowerCase().includes(search.toLowerCase()) || museum.desc.toLowerCase().includes(search.toLowerCase())
+    }))
+  } else{
+    setFilteredMuseums(museums.filter(museum => {
+      return museum.name.toLowerCase().includes(search.toLowerCase()) || museum.desc.toLowerCase().includes(search.toLowerCase())
+    }))
+  }
+ }, [search, isFree])
 
   return (
     <div>
@@ -46,9 +74,13 @@ function PageRender() {
             path="/museums"
             element={
               <MuseumList
-                museums={museums}
+                museums={filteredMuseums}
                 onRemoveMuseum={onRemoveMuseum}
                 API={API}
+                search={search}
+                isFree={isFree}
+                onSearchBarChange={onSearchBarChange}
+                onIsFreeChange={onIsFreeChange}
               />
             }
           />

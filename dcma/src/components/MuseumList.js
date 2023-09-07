@@ -1,14 +1,23 @@
 import MuseumCard from "./MuseumCard"
-// import dcSubwayBackground from "./dcSubway.png";
 import dcSubwayBackground from "../Images/dcSubway.png"; // Import the background image
 
-
-function MuseumList({museums, API, onRemoveMuseum}){
-
+function MuseumList({museums, API, onRemoveMuseum, isFree, search, onIsFreeChange, onSearchBarChange}){
     const renderMuseums = museums.map((museum)=>{return <MuseumCard key={museum.id} onRemoveMuseum={onRemoveMuseum} API={API} museum={museum}/>})
+    
+    function handleSearchChange(e){
+        onSearchBarChange(e.target.value)
+    }
+    function handleCheckBoxChange(e){
+        onIsFreeChange(e.target.checked)
+    }
+    
     return(
         <div style={BackgroundStyle}>
           <h1 style={titleStyle}>Museum List</h1>
+          <label htmlFor="searchbar">Search Museums:</label>
+          <input id="searchBar" name="searchBar" type="text" value={search} onChange={handleSearchChange}/>
+          <label htmlFor="checkbox">See free museums:</label>
+          <input id="checkbox" name="isFree" type="checkbox" value={isFree} onChange={handleCheckBoxChange}/>
           <div style={ListStyle}>{renderMuseums}</div>
         </div>
     )

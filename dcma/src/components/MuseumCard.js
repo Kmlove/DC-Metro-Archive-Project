@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-
 function MuseumCard({museum, API, onRemoveMuseum}){
     const {name, id, feedback, image} = museum
     
