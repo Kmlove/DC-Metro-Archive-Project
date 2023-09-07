@@ -174,7 +174,23 @@
       "desc": "This expansive new Smithsonian museum honors African American history, art, and culture! Current exhibitions include a test kitchen, illuminating artifacts from the March on Washington, and an amazing new show about Afrofuturism. Mindful programming for kids includes and educates the whole family!",
       "admission": 0,
       "image": "https://ids.si.edu/ids/deliveryService?id=https://www.si.edu/sites/default/files/images/nmaahc-1000x675.jpg&max_w=600",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "Check out the food court!! It is do dieeeeeeeeeee for!!!",
+          "likes": 27
+        },
+        {
+          "rating": 4,
+          "comment": "You need a whole weekend for this museum and that still might not be enought time!",
+          "likes": 16
+        },
+        {
+          "rating": 5,
+          "comment": "Eveyone needs to come here!!! The architecture is beautiful!",
+          "likes": 11
+        }
+      ]
     },
     {
       "id": 8,
@@ -184,7 +200,23 @@
       "desc": "This classic Smithsonian science museum explores our fascinating planet, from the big bang until now! Spectacular gemstones, a huge living bug collection, dinosaurs galore, and many more make this a family-friendly find!",
       "admission": 0,
       "image": "https://www.tripsavvy.com/thmb/zWftBjy0lL7qj2D5QlJW661y27U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VDC_9257-e7a4636add0049b899d5be79b9fad9ad.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "This museum is SSSIIICCKKKKKKKKK",
+          "likes": 4
+        },
+        {
+          "rating": 5,
+          "comment": "The dinasuours were awesome",
+          "likes": 3
+        },
+        {
+          "rating": 4,
+          "comment": "So many fish! My son found Nemo and was so excited!",
+          "likes": 8
+        }
+      ]
     },
     {
       "id": 9,
@@ -194,7 +226,23 @@
       "desc": "This high-octane private museum teaches visitors about the how, why, and what of spycraft through history, all the way up to the present. Crack codes, pick out gadgets, and play a role in an elaborate cinematic mission. Kids of all ages are welcome, but the museum is recommended for people 9+.",
       "admission": "$32.95 for adults, with discounts for students, children, seniors, and military servicepeople",
       "image": "https://nohomejustroam.com/wp-content/uploads/2020/10/International-Spy-Museum.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "My Kids had a great time",
+          "likes": 1
+        },
+        {
+          "rating": 4,
+          "comment": "Expensive but worth it",
+          "likes": 12
+        },
+        {
+          "rating": 4,
+          "comment": "Geared more towards kids than adults.... still fun though",
+          "likes": 5
+        }
+      ]
     },
     {
       "id": 10,
