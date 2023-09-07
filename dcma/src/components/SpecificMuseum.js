@@ -45,8 +45,11 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
       return (
         <CommentCard
           key={feedback.indexOf(obj)}
-          rating={obj.rating}
-          comment={obj.comment}
+          feedbackId={feedback.indexOf(obj)}
+          feedbackInfo={obj}
+          updateComment={addComment}
+          specificMuseum={specificMuseum}
+          API={API}
         />
       );
     });

@@ -51,16 +51,14 @@ function PageRender() {
   const randomMuseum = museums[Math.floor(Math.random() * museums.length)];
 
  useEffect(()=>{
+  let museumsToFilter = museums
   if(isFree){
-    const filteredMuseums = museums.filter(museum => museum.admission === 0)
-    setFilteredMuseums(filteredMuseums.filter(museum => {
+    museumsToFilter = museums.filter(museum => museum.admission === 0)
+    }
+    setFilteredMuseums(museumsToFilter.filter(museum => {
       return museum.name.toLowerCase().includes(search.toLowerCase()) || museum.desc.toLowerCase().includes(search.toLowerCase())
     }))
-  } else{
-    setFilteredMuseums(museums.filter(museum => {
-      return museum.name.toLowerCase().includes(search.toLowerCase()) || museum.desc.toLowerCase().includes(search.toLowerCase())
-    }))
-  }
+  
  }, [search, isFree])
 
   return (
