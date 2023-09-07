@@ -252,7 +252,28 @@
       "desc": "This spectacular Smithsonian museum celebrates and honors the diverse culture, art and history of Native American communities from all over the continent. Come to this family favorite for the incredible events, inclusive programming, and exhibits, and stay for the delicious food innovated by indigenous chefs in traditional foodways!",
       "admission": 0,
       "image": "https://ids.si.edu/ids/deliveryService?id=https://www.si.edu/content/img/museums/banner/nmai.jpg&max_w=600",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "Incredible cafe",
+          "likes": 0
+        },
+        {
+          "rating": 3,
+          "comment": "Big ramp in the middle was hard to navigate on crutches but exhibit was really cool",
+          "likes": 0
+        },
+        {
+          "rating": 1,
+          "comment": "Why was the big theater closed when I went!?! Someone give me answers",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "I cried a lot",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 11,
@@ -294,7 +315,33 @@
       "desc": "This family-friendly crowd-pleaser of a science museum is dedicated to engineering, design, architecture, and urban planning. A diverse range of programming in a decadent old building make this museum a hit with builders of all ages.",
       "admission": "$10 adults $7 kids",
       "image": "https://img.atlasobscura.com/_RYwyew7QxmLKizCIB70fZDjF2icgaXIN22aMBqw0is/rs:fill:580:580:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83NDFh/ODk3YWEyMGUwY2Zh/NjdfMTQ2MjYwMDg3/OThfNWY1MzYxNWU5/Zl9vLmpwZw.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 1,
+          "comment": "they didn't let me build any museums why",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "free yoga for the architecture girlies!",
+          "likes": 0
+        },
+        {
+          "rating": 1,
+          "comment": "urban planning is so cool...said noone ever",
+          "likes": 0
+        },
+        {
+          "rating": 4,
+          "comment": "only taking a point off because the cafe was bad, this was a great time",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "I'm ten and this is literally my favorite place on this entire planite of earth!!1!",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 14,
@@ -304,7 +351,23 @@
       "desc": "The historic house and grounds that make up this national park were the home of American abolitionist Frederick Douglass for over 20 years. Come take a tour and learn more about Douglass' life and work to reshape our nation. Tour guides are able to educate and accommodate even the youngest kids. Reservations are required, no entry without a tour",
       "admission": 0,
       "image": "https://www.nps.gov/common/uploads/grid_builder/frdo/crop16_9/10399185-1DD8-B71B-0B3A595790E8119A.jpg?width=1300&quality=90&mode=crop",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "My students got so much out of their tour here- such an overlooked part of DC history.",
+          "likes": 0
+        },
+        {
+          "rating": 4,
+          "comment": "Came here on a field trip- wish they had free sunscreen. Great tour tho",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "Park rangers are incredible! We stan!",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 15,
