@@ -35,8 +35,8 @@
           "comment": "Very COOL!! Everyone has to go!!",
           "likes": 6
         },
-        {  
-        "rating": 4,
+        {
+          "rating": 4,
           "comment": "There's a room in here that's made of beeswax- not even kidding! Wild.",
           "likes": 0
         },
@@ -340,7 +340,18 @@
       "desc": "This art museum in the heart of historic Georgetown houses an impressive collection of Byzantine and Pre-Columbian art in an old mansion surrounded by gorgeous historic gardens. Older kids will feel welcome in this quiet sanctum!",
       "admission": 0,
       "image": "https://media.cntraveler.com/photos/55ce1cc6c47ae13868ae443f/16:9/w_2560,c_limit/dumbarton-oaks-exterior-washington-dc.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "I swear I'm not a Byzantophile",
+          "likes": 3
+        },
+        {
+          "rating": 4,
+          "comment": "love the anzac culture here",
+          "likes": 9
+        }
+      ]
     },
     {
       "id": 17,
@@ -350,7 +361,23 @@
       "desc": "This Smithsonian history museum is dedicated to the evolution of mail delivery and stamp collecting in the U.S. since the country's founding. This stamp collectors' paradise has a surprisingly huge collection of vintage airplanes and a great education program, making it a hit with kids!",
       "admission": 0,
       "image": "https://lh3.googleusercontent.com/p/AF1QipOTDdWP9edu_D4KgAWYnrP7l-4cfHdAbMReQkva=s1360-w1360-h1020",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 2,
+          "comment": "Wow, no wonder there taking so long on deliveries these days, they're running a whole museum",
+          "likes": 13
+        },
+        {
+          "rating": 5,
+          "comment": "I love those little stamps, they are all so cool and fun to collect",
+          "likes": 17
+        },
+        {
+          "rating": 4,
+          "comment": "I was trying to research a project of mine here, and the staff were very helpful in finding the info I needed.",
+          "likes": 7
+        }
+      ]
     }
   ]
 }
