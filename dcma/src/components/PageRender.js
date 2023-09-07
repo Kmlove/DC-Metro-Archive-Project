@@ -50,7 +50,6 @@ function PageRender() {
 
   const randomMuseum = museums[Math.floor(Math.random() * museums.length)];
 
-
  useEffect(()=>{
   if(isFree){
     const filteredMuseums = museums.filter(museum => museum.admission === 0)
