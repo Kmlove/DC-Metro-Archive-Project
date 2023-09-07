@@ -35,7 +35,7 @@ function Home({ randomMuseum }) {
             <p style={descriptionStyle}>{randomMuseum.desc}</p>
             <p style={ratingStyle}>
               Average Rating:{" "}
-              {isNaN(averageRating) ? "No ratings yet!" : averageRating}
+              {isNaN(averageRating) ? "No ratings yet!" : averageRating.toFixed(2)}
             </p>
             <Link to={`/museums/${randomMuseum.id}`} style={linkStyle}>
               Learn More!
