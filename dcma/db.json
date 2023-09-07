@@ -15,8 +15,8 @@
           "likes": 25
         },
         {
-          "rating": 4,
-          "comment": "Another Rating",
+          "rating": 2,
+          "comment": "The giftshop was closed, but the museum was cool",
           "likes": 5
         }
       ]
@@ -29,7 +29,13 @@
       "desc": "This private art museum exhibits modern and contemporary art in a decadent vintage mansion! Younger kids might get antsy in this local fave, but tweens and up will be enthralled and included by innovative community programming.",
       "admission": "tickets are $16 for adults, with member, senior, student, and child discounts available",
       "image": "https://sideofculture.com/wp-content/uploads/2022/01/Phillips-Collection-original-house-exterior-1024x768.jpeg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "Very COOL!! Everyone has to go!!",
+          "likes": 6
+        }
+      ]
     },
     {
       "id": 3,
@@ -39,7 +45,23 @@
       "desc": "This Smithsonian art museum houses mind-bending modern and contemporary works both indoors and outdoors. The sculpture garden's giant shapes are perfect for kids to run around, too!",
       "admission": 0,
       "image": "https://hirshhorn.si.edu/wp-content/uploads/2017/11/Sculpture-Garden-in-Spring-2016-batched-5.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 3,
+          "comment": "Go in the mornings when it's less crowded!",
+          "likes": 12
+        },
+        {
+          "rating": 5,
+          "comment": "My kids were raving about it all day after going!",
+          "likes": 6
+        },
+        {
+          "rating": 5,
+          "comment": "Great Sculptures, very big!!",
+          "likes": 4
+        }
+      ]
     },
     {
       "id": 4,
@@ -49,7 +71,23 @@
       "desc": "This public art museum has something for everyone! One wing for old art, one wing for new art!",
       "admission": 0,
       "image": "https://d3qvqlc701gzhm.cloudfront.net/full/292e4ddc962f3b80e877730cc6b957f41b35ec1bed7bf5efe723b76e0780e80d.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 4,
+          "comment": "The cafe here is expensive but amazing",
+          "likes": 13
+        },
+        {
+          "rating": 4,
+          "comment": "Very modern exhibits",
+          "likes": 1
+        },
+        {
+          "rating": 2,
+          "comment": "kinda boring.....",
+          "likes": 8
+        }
+      ]
     },
     {
       "id": 5,
