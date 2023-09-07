@@ -7,6 +7,11 @@ import usCapitolBackground from "../Images/capitalPhoto.jpeg";
 function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
   const [specificMuseum, setSpecificMuseum] = useState(null);
   const { id } = useParams();
+  const placeholderImage = "https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80"
+
+  function onImgError(e){
+    e.target.src = placeholderImage
+  }
 
   useEffect(() => {
     fetch(`${API}/${id}`)
@@ -31,10 +36,7 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
     return <h1>LOADING...</h1>;
   } else {
     let { name, admission, desc, image, feedback } = specificMuseum;
-    if (image === "") {
-      image =
-        "https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80";
-    }
+
 
     const arrayOfRating = feedback.map((Obj) => Obj.rating);
     const averageRating =
@@ -59,11 +61,12 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
         <div style={centeredContent}>
           <h1 style={headerStyle}>{name}</h1>
           <img
-            src={image}
+            src={image?image:placeholderImage}
             alt={name}
             style={imageStyle}
             width="500px"
             height="400px"
+            onError={onImgError}
           />
           <h3>
             Average Rating:{" "}
