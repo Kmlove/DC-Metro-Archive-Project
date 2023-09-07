@@ -158,7 +158,9 @@ const descriptionStyle = {
   marginBottom: "10px",
   maxWidth: "95%",
   display: "flex",
+  flexDirection: "column",
   margin: "0 auto",
+  textAlign: "center",
 };
 
 const descriptionTextStyle = {
@@ -170,7 +172,7 @@ const descriptionTextStyle = {
 
 const linkStyle = {
   textDecoration: "none",
-  color: "#007bff",
+  color: "red",
   fontWeight: "bold",
   marginLeft: "10px",
   fontSize: "25px",
