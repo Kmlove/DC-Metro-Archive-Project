@@ -67,7 +67,7 @@ function CommentCard({ feedbackInfo,updateComment,specificMuseum,API,feedbackId 
       <p style={{display: "inline"}}>{comment}  </p>
       <span style={{...LikeBtn,display: "inline"}} className="submitBtn" onClick={handleClick} >{likes} Likes</span>
       <p style={{display: "inline"}}>  </p>
-      <span style={{...LikeBtn,display: "inline"}} className="submitBtn" onClick={handleDelete}>Delete</span>
+      <span style={{...LikeBtn,display: "inline"}} className="DelCommentBtn" onClick={handleDelete}>Delete</span>
     </div>
   );
 
