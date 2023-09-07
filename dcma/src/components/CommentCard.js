@@ -14,12 +14,13 @@ function CommentCard({ feedbackInfo,updateComment,specificMuseum,API,feedbackId 
   const cardStyle = {
     backgroundColor: "f8f0fac",
     fontFamily: "Arial, sans-serif",
-    fontSize: "25px",
+    fontSize: "20px",
     marginTop: "10px",
     marginBottom: "10px",
     borderRadius: "5px",
     gap: "10px",
-    textAlign: "center",
+    display: "flex",
+    justifyContent:"space-between"
   };
   function handleDelete(e){
     const data = feedback.filter((obj)=>(feedback.indexOf(obj)!==feedbackId))
@@ -63,11 +64,15 @@ function CommentCard({ feedbackInfo,updateComment,specificMuseum,API,feedbackId 
   }
   return (
     <div style={cardStyle}>
-      <h4 style={{display: "inline"}}>{rating}  </h4>
-      <p style={{display: "inline"}}>{comment}  </p>
-      <span style={{...LikeBtn,display: "inline"}} className="submitBtn" onClick={handleClick} >{likes} Likes</span>
-      <p style={{display: "inline"}}>  </p>
-      <span style={{...LikeBtn,display: "inline"}} className="DelCommentBtn" onClick={handleDelete}>Delete</span>
+      <div style={{maxWidth: "83%", textAlign: "left"}}>
+        <h4 style={{display: "inline"}}>{rating}  </h4>
+        <p style={{display: "inline"}}>{comment}  </p>
+      </div>
+      <div>
+        <span style={{...LikeBtn,display: "inline", }} className="submitBtn" onClick={handleClick} >{likes} Likes</span>
+        <p style={{display: "inline"}}>  </p>
+        <span style={{...LikeBtn,display: "inline"}} className="DelCommentBtn" onClick={handleDelete}>Delete</span>
+      </div>
     </div>
   );
 

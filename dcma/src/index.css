@@ -79,3 +79,8 @@ code {
   background-color: lightgrey;
   color: black;
 }
+
+#hoverStyles:hover{
+  color: black !important;
+  text-decoration: underline !important;
+}

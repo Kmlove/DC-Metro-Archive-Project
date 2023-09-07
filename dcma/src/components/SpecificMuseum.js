@@ -88,7 +88,7 @@ function SpecificMuseum({ API, onRemoveMuseum, onUpdatedMuseum }) {
           <div style={descriptionStyle}>
             <p style={descriptionTextStyle}>{desc}</p>
           </div>
-          <Link to="/museums" onClick={handleClick} style={linkStyle}>
+          <Link to="/museums" onClick={handleClick} style={linkStyle} id="hoverStyles">
             Delete Museum
           </Link>
           <CommentForm
