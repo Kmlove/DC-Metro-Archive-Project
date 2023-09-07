@@ -21,6 +21,7 @@ function CommentForm({ API, id, feedback, addComment }) {
     const newFeedback = {
       ...feedbackFormData,
       rating: numberRating,
+      likes: 0
     };
     const data = [...feedback, newFeedback];
 

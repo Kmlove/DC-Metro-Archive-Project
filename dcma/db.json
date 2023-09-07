@@ -11,7 +11,13 @@
       "feedback": [
         {
           "rating": 2,
-          "comment": "Why did I bring my date here? Breakup central."
+          "comment": "Why did I bring my date here? Breakup central.",
+          "likes": 25
+        },
+        {
+          "rating": 4,
+          "comment": "Another Rating",
+          "likes": 5
         }
       ]
     },
