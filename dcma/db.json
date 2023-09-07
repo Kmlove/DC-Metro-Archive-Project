@@ -49,7 +49,13 @@
       "desc": "This public art museum has something for everyone! One wing for old art, one wing for new art!",
       "admission": 0,
       "image": "https://d3qvqlc701gzhm.cloudfront.net/full/292e4ddc962f3b80e877730cc6b957f41b35ec1bed7bf5efe723b76e0780e80d.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "Big Calders AND Da Vinki Code! DANG",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 5,
