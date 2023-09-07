@@ -34,6 +34,26 @@
           "rating": 5,
           "comment": "Very COOL!! Everyone has to go!!",
           "likes": 6
+        },
+        {  
+        "rating": 4,
+          "comment": "There's a room in here that's made of beeswax- not even kidding! Wild.",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "Rothko hive assemble! 🐝 🔴🔵",
+          "likes": 0
+        },
+        {
+          "rating": 1,
+          "comment": "New cafe doesn't have pretzels booooo",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "Rothko hive buzz buzz",
+          "likes": 0
         }
       ]
     },
@@ -86,6 +106,11 @@
           "rating": 2,
           "comment": "kinda boring.....",
           "likes": 8
+        },
+        {
+          "rating": 5,
+          "comment": "Big Calders AND Da Vinki Code! DANG",
+          "likes": 0
         }
       ]
     },
@@ -97,7 +122,33 @@
       "desc": "Lions and tigers and pandas, oh my! This scientific family favorite Smithsonian park is one of the oldest zoos in the country, and home to over 2,100 animals and world-famous educational offerings!",
       "admission": 0,
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Washington_Zoo_entrance.jpg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 5,
+          "comment": "Amazing place for secret skateboarding shhhh 🤫",
+          "likes": 0
+        },
+        {
+          "rating": 1,
+          "comment": "Full of teenagers skipping school- hooligans everywhere! My grandbabies just wanted to look at marmosets!",
+          "likes": 0
+        },
+        {
+          "rating": 2,
+          "comment": "Pandas too shy",
+          "likes": 0
+        },
+        {
+          "rating": 1,
+          "comment": "Octopus stole my phone",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "Anyone else think these giraffes party?",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 6,
