@@ -31,7 +31,7 @@ function WeatherWidget() {
     borderRadius: "10px", // Add rounded corners
     padding: "20px", // Add some padding for spacing
     boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)", // Add a box shadow for a card-like appearance
-    maxWidth: "300px", // Set a maximum width to control the width of the widget
+    maxWidth: "325px", // Set a maximum width to control the width of the widget
     margin: "0 auto", // Center the widget horizontally
     textAlign: "center", // Center the content
   };

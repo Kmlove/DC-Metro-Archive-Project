@@ -52,10 +52,10 @@ code {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 135px;
+  width: 125px;
   font-weight: bold;
   font-size: 16px;
-  margin: -10px auto 0 auto;
+  margin: -5px auto 0 auto;
 }
 .submitBtn:hover {
   cursor: pointer;

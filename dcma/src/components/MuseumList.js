@@ -19,15 +19,17 @@ const ListStyle = {
     flexWrap: "wrap",
     gap: "2% 2%",
     justifyContent: "center",
-    marginTop: "4%",
+    marginTop: "-10px",
     marginBottom: "4%",
+    maxWidth: "1200px",
 }
 
 const titleStyle = {
     fontSize: "48px", // Increase font size
     fontWeight: "bold",
     color: "#1E90FF",
-    marginBottom: "40px", // Add more distance below the title
+    marginBottom: "50px", // Add more distance below the title
+    marginTop: "5px",
     textAlign: "center",
   };
 const BackgroundStyle = {

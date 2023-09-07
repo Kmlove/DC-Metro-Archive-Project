@@ -63,19 +63,6 @@ function MuseumForm({ appendToMuseums, API }) {
     marginBottom: "20px", // Added margin to admission input
   };
 
-  const submitButtonStyle = {
-    backgroundColor: "#007bff",
-    color: "#fff",
-    padding: "15px",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-    width: "20%",
-    fontWeight: "bold",
-    fontSize: "16px",
-    margin: "0 auto",
-  };
-
   const pageStyle = {
     backgroundImage: `url(${dcSubwayBackground})`, // Set the background image
     backgroundSize: "cover",
@@ -90,9 +77,18 @@ function MuseumForm({ appendToMuseums, API }) {
     backgroundBlendMode: "lighten"
   };
 
+  const subheaderStyles = {
+    fontSize: "40px", // Increase font size
+    fontWeight: "bold",
+    color: "#1E90FF",
+    marginBottom: "20px", // Add more distance below the title
+    marginTop: "-80px",
+    textAlign: "center",
+  }
+
   return (
     <div style={pageStyle}>
-      <h2>Know a museum we haven't covered? Add it here!</h2>
+      <h2 style={subheaderStyles}>Know a museum we haven't covered? Add it here!</h2>
       
       <form style={formStyle} onSubmit={handleSubmit}>
         <label htmlFor="nameInput" style={labelStyle}>
@@ -166,7 +162,7 @@ function MuseumForm({ appendToMuseums, API }) {
           style={admissionInputStyle}
           placeholder="If admission is free, please enter: 0"
         />
-        <button type="submit" style={submitButtonStyle}>
+        <button type="submit" className="submitBtn" >
           Submit
         </button>
       </form>

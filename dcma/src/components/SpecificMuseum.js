@@ -92,7 +92,6 @@ const containerStyle = {
   justifyContent: "center",
   alignItems: "center",
   height: "5%",
-  border: "1px solid black",
   backgroundImage: `url(${usCapitolBackground})`,
   minHeight: "100vh",
   backgroundSize: "cover",
@@ -104,6 +103,7 @@ const containerStyle = {
 const centeredContent = {
   textAlign: "center",
   width: "70%",
+  maxWidth: "1075px",
   height: "50%",
   margin: "25px auto",
   backgroundColor: "#f0f0f0",

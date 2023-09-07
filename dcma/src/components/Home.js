@@ -68,6 +68,7 @@ const titleStyle = {
 
 const recommendedSpotContainerStyle = {
   width: "75%",
+  maxWidth: "1050px",
   margin: "0 auto",
   backgroundColor: "#f0f0f0",
   padding: "20px",
