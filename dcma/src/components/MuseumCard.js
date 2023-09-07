@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 function MuseumCard({ museum, API, onRemoveMuseum, museums }) {
   let { name, id, feedback, image } = museum;
+  const placeholderImage = "https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80"
 
-  if (image === "") {
-    image =
-      "https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80";
+  function onImgError(e){
+    e.target.src = placeholderImage
   }
 
   function handleClick() {
@@ -55,7 +55,7 @@ function MuseumCard({ museum, API, onRemoveMuseum, museums }) {
         Average Rating:{" "}
         {isNaN(averageRating) ? "No ratings yet" : averageRating.toFixed(2)}
       </h4>
-      <img style={ImgStyle} src={image}></img>
+      <img style={ImgStyle} src={image?image:placeholderImage} onError={onImgError}></img>
       <br></br>
       <div style={DivBtnStyle}>
         <div>

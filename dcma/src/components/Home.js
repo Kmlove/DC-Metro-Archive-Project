@@ -3,6 +3,11 @@ import dcSubwayBackground from "../Images/dcSubway.png"; // Import the backgroun
 import WeatherWidget from "./Weather";
 
 function Home({ randomMuseum }) {
+  const placeholderImage = "https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80"
+
+  function onImgError(e){
+    e.target.src = placeholderImage
+  }
   if (randomMuseum === undefined) {
     return <h1>Loading...</h1>;
   } else {
@@ -22,8 +27,9 @@ function Home({ randomMuseum }) {
             <div style={imageContainerStyle}>
               <img
                 style={imageStyle}
-                src={randomMuseum.image}
+                src={randomMuseum.image?randomMuseum.image:placeholderImage}
                 alt={randomMuseum.name}
+                onError={onImgError}
               />
             </div>
             <p style={descriptionStyle}>{randomMuseum.desc}</p>
