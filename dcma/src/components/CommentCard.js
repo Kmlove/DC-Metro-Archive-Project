@@ -21,6 +21,19 @@ function CommentCard({ feedbackInfo,updateComment,specificMuseum,API,feedbackId 
     gap: "10px",
     textAlign: "center",
   };
+  function handleDelete(e){
+    const data = feedback.filter((obj)=>(feedback.indexOf(obj)!==feedbackId))
+    fetch(`${API}/${id}`, {
+      method: "PATCH",
+      headers: {
+        "content-type": "application/json",
+        accept: "application/json",
+      },
+      body: JSON.stringify({ feedback: data }),
+    })
+      .then((res) => res.json())
+      .then((data) => updateComment(data));
+  }
   function handleClick(e) {
 
     const newLikes = likes + 1
@@ -53,6 +66,8 @@ function CommentCard({ feedbackInfo,updateComment,specificMuseum,API,feedbackId 
       <h4 style={{display: "inline"}}>{rating}  </h4>
       <p style={{display: "inline"}}>{comment}  </p>
       <span style={{...LikeBtn,display: "inline"}} className="submitBtn" onClick={handleClick} >{likes} Likes</span>
+      <p style={{display: "inline"}}>  </p>
+      <span style={{...LikeBtn,display: "inline"}} className="submitBtn" onClick={handleDelete}>Delete</span>
     </div>
   );
 

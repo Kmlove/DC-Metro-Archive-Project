@@ -54,12 +54,12 @@ function PageRender() {
   let museumsToFilter = museums
   if(isFree){
     museumsToFilter = museums.filter(museum => museum.admission === 0)
-    }
-    setFilteredMuseums(museumsToFilter.filter(museum => {
-      return museum.name.toLowerCase().includes(search.toLowerCase()) || museum.desc.toLowerCase().includes(search.toLowerCase())
+  }
+  setFilteredMuseums(museumsToFilter.filter(museum => {
+    return museum.name.toLowerCase().includes(search.toLowerCase()) || museum.desc.toLowerCase().includes(search.toLowerCase())
     }))
   
- }, [search, isFree])
+ }, [search, isFree, museums])
 
   return (
     <div>
