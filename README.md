@@ -3,7 +3,14 @@
 ## UserStory
 The DC Museum Archive is a rating application for museums in the nation's capital.
 
-The landing page will display a random recommended museum of the day. Using the navbar at the top a user can find a specific museum, or add a museum missing from the database. Users will be able to review and rate the museums available. They can also update or delete their own reviews on the site and remove museums that have closed. We hope you enjoy your visit to DC and its wonderfull museums!
+The landing page will display a random recommended museum of the day. Using the navbar at the top a user can find a specific museum, or add a museum missing from the database. Users will be able to review and rate the museums available. They can also update or delete their own reviews on the site and remove museums that have closed. We hope you enjoy your visit to DC and its wonderfull museums! Check out the video below showing the site in action!
+
+
+
+[dcmaDemo.mp4.zip](https://github.com/Kmlove/DC-Metro-Archive-Project/files/12553382/dcmaDemo.mp4.zip)
+
+
+
 
 ## Database
 We will be creating our own db.json that will look similar to below:
