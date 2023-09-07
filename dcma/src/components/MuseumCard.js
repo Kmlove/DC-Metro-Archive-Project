@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function MuseumCard({museum, API, onRemoveMuseum}){
+function MuseumCard({museum, API, onRemoveMuseum, museums}){
     const {name, id, feedback, image} = museum
     
     function handleClick(){
@@ -12,6 +12,37 @@ function MuseumCard({museum, API, onRemoveMuseum}){
     }
     const arrayOfRating = feedback.map((Obj) => Obj.rating);
     const averageRating = arrayOfRating.reduce((partSum, a) => partSum + a, 0)/arrayOfRating.length;
+   
+    const CardStyle = {
+        width: museums.length <= 2? "450px" : "45%",
+        height: "450px",
+        maxWidth: "800px",
+        backgroundColor: "#f0f0f0",
+        padding: "5px 10px",
+        borderRadius: "10px",
+        boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+        marginBottom: "20px",
+        textAlign: "center",
+        position: "relative",
+      };
+    
+    const ImgStyle = {
+        display: "block",
+        width: "80%",
+        height: "55%",
+        margin: "0 auto",
+     }
+    
+    const DivBtnStyle = {
+        display: "flex",
+        justifyContent: "space-around",
+        position: "absolute",
+        bottom: "15px",
+        left: "10px",
+        right: "10px"
+    }
+    
+    
     return(
         <div style={CardStyle} className="MuseumCard">
             <h3>{name}</h3>
@@ -27,30 +58,6 @@ function MuseumCard({museum, API, onRemoveMuseum}){
             </div>
         </div>
     )
-}
-
-const CardStyle = {
-    width: "45%",
-    height: "450px",
-    maxWidth: "800px",
-    backgroundColor: "#f0f0f0",
-    padding: "5px 10px",
-    borderRadius: "10px",
-    boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
-    marginBottom: "20px",
-    textAlign: "center",
-  };
-
-const ImgStyle = {
-    display: "block",
-    width: "80%",
-    height: "55%",
-    margin: "0 auto",
- }
-
-const DivBtnStyle = {
-    display: "flex",
-    justifyContent: "space-between",
 }
 
 export default MuseumCard

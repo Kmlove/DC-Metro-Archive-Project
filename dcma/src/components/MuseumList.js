@@ -2,7 +2,7 @@ import MuseumCard from "./MuseumCard"
 import dcSubwayBackground from "../Images/dcSubway.png"; // Import the background image
 
 function MuseumList({museums, API, onRemoveMuseum, isFree, search, onIsFreeChange, onSearchBarChange}){
-    const renderMuseums = museums.map((museum)=>{return <MuseumCard key={museum.id} onRemoveMuseum={onRemoveMuseum} API={API} museum={museum}/>})
+    const renderMuseums = museums.map((museum)=>{return <MuseumCard key={museum.id} onRemoveMuseum={onRemoveMuseum} API={API} museum={museum} museums={museums}/>})
     
     function handleSearchChange(e){
         onSearchBarChange(e.target.value)
@@ -63,7 +63,7 @@ function MuseumList({museums, API, onRemoveMuseum, isFree, search, onIsFreeChang
         <div style={BackgroundStyle}>
           <h1 style={titleStyle}>Museum List</h1>
           <div style={formStyle}>
-            <label htmlFor="searchbar">Search Museums:</label>
+            <label htmlFor="searchbar">Search Museum Name and/or Description:</label>
             <input style={{padding: "5px", marginBottom: "5px"}} id="searchBar" name="searchBar" type="text" value={search} onChange={handleSearchChange}/>
             <label htmlFor="checkbox">See Free Museums:</label>
             <input id="checkbox" name="isFree" type="checkbox" value={isFree} onChange={handleCheckBoxChange}/>
