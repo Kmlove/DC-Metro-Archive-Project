@@ -29,7 +29,28 @@
       "desc": "This private art museum exhibits modern and contemporary art in a decadent vintage mansion! Younger kids might get antsy in this local fave, but tweens and up will be enthralled and included by innovative community programming.",
       "admission": "tickets are $16 for adults, with member, senior, student, and child discounts available",
       "image": "https://sideofculture.com/wp-content/uploads/2022/01/Phillips-Collection-original-house-exterior-1024x768.jpeg",
-      "feedback": []
+      "feedback": [
+        {
+          "rating": 4,
+          "comment": "There's a room in here that's made of beeswax- not even kidding! Wild.",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "Rothko hive assemble! 🐝 🔴🔵",
+          "likes": 0
+        },
+        {
+          "rating": 1,
+          "comment": "New cafe doesn't have pretzels booooo",
+          "likes": 0
+        },
+        {
+          "rating": 5,
+          "comment": "Rothko hive buzz buzz",
+          "likes": 0
+        }
+      ]
     },
     {
       "id": 3,
