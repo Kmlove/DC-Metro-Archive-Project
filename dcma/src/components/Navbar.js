@@ -4,7 +4,9 @@ function Navbar() {
   const navbarStyle = {
     backgroundColor: "#1E90FF", // Washington DC-themed blue color
     padding: "14px",
+    height: "60px",
     display: "flex",
+    gap: "25px",
     justifyContent: "center", // Center the content horizontally
     alignItems: "center", // Center the content vertically
   };
@@ -13,7 +15,7 @@ function Navbar() {
     textDecoration: "none",
     color: "#fff", // White text color
     margin: "0 10px",
-    fontSize: "20px",
+    fontSize: "22px",
     fontWeight: "bold",
   };
 
